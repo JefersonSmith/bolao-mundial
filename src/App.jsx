@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <Header title="Bolão Mundial de Clubes FIFA" subtitle="Grupo do Flamengo - Imaturos" />
+      <Header title="Bolão Mundial de Clubes FIFA" subtitle="Grupo do Flamengo - Imaturos!" />
 
       <div className="main-content-wrapper">
         <section id="tabela-jogos" className="section-card">
