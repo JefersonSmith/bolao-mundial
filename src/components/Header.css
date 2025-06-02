@@ -1,0 +1,37 @@
+/* src/components/Header.css */
+.app-header {
+    background-color: #a00000; /* Vermelho mais escuro, estilo Flamengo */
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+    border-bottom: 5px solid #ff6f61; /* Linha de destaque */
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    color: #ffffff; /* Cor branca para o título principal */
+}
+
+.app-header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #f0f0f0;
+}
+
+/* Efeito de transição para o header, se houver algo que mude */
+.app-header {
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Exemplo de hover, se fosse interativo */
+/*
+.app-header:hover {
+    background-color: #c00000;
+}
+*/
