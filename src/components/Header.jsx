@@ -1,11 +1,15 @@
 import React from 'react';
-import './Header.css'; // Estilos específicos para o Header
+import './Header.css';
+import flamengoLogo from '../assets/Fla.png'
 
 function Header({ title, subtitle }) {
   return (
     <header className="app-header">
-      <h1>{title}</h1>
-      <p>{subtitle}</p>
+      <img src={flamengoLogo} alt="Escudo do Flamengo" className="flamengo-logo" />
+      <div>
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
+      </div>
     </header>
   );
 }

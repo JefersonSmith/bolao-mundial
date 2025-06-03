@@ -6,6 +6,7 @@ import Header from './components/Header.jsx';
 import GameTable from './components/GameTable.jsx';
 import Leaderboard from './components/Leaderboard.jsx';
 import BetCard from './components/BetCard.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   // --- DADOS DO BOLÃO ---
@@ -62,6 +63,7 @@ function App() {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -6,7 +6,6 @@
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     margin-bottom: 30px;
-    border-bottom: 5px solid #ff6f61; /* Linha de destaque */
 }
 
 .app-header h1 {
@@ -28,6 +27,19 @@
 .app-header {
     transition: background-color 0.3s ease-in-out;
 }
+
+.app-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.flamengo-logo {
+  width: 50px; /* ou o tamanho que quiser */
+  height: auto;
+  margin-right: 15px;
+}
+
 
 /* Exemplo de hover, se fosse interativo */
 /*
