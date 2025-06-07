@@ -29,6 +29,7 @@ function App() {
     { id: 6, name: 'Nathan', points: 0 },
     { id: 7, name: 'Pedro', points: 0 },
     { id: 8, name: 'Kleber', points: 0 },
+    { id: 9, name: 'Yure', points: 0 },
 
   ];
 
@@ -42,6 +43,7 @@ function App() {
     { participantName: 'Nathan', bets: ['Chelsea 3 x 1 Los Angels FC','Flamengo 2 x 1 Espérance', 'Flamengo 1 x 2 Chelsea', 'Los Angeles FC 0 x 2 Espérance', 'Espérance 0 x 4 Chelsea', 'Los Angeles FC 1 x 2 Flamengo'] },
     { participantName: 'Pedro', bets: ['Chelsea 3 x 1 Los Angels FC','Flamengo 2 x 0 Espérance', 'Flamengo 1 x 0 Chelsea', 'Los Angeles FC 2 x 1 Espérance', 'Espérance 0 x 2 Chelsea', 'Los Angeles FC 0 x 2 Flamengo'] },
     { participantName: 'Kleber', bets: ['Chelsea 4 x 0 Los Angels FC','Flamengo 3 x 1 Espérance', 'Flamengo 2 x 1 Chelsea', 'Los Angeles FC 2 x 2 Espérance', 'Espérance 0 x 3 Chelsea', 'Los Angeles FC 0 x 2 Flamengo'] },
+    { participantName: 'Yure', bets: ['Chelsea 2 x 1 Los Angels FC','Flamengo 2 x 0 Espérance', 'Flamengo 0 x 1 Chelsea', 'Los Angeles FC 1 x 0 Espérance', 'Espérance 0 x 3 Chelsea', 'Los Angeles FC 0 x 2 Flamengo'] },
   ];
 
   return (
