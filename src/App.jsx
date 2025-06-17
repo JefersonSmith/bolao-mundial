@@ -11,8 +11,8 @@ import Footer from './components/Footer.jsx';
 function App() {
   // --- DADOS DO BOLÃO ---
   const games = [
-    { id: 1, date: '16/06 (Segunda) - 16:00', teams: 'Chelsea x Los Angeles FC', location: 'Atlanta' },
-    { id: 2, date: '16/06 (Segunda) - 22:00', teams: 'Flamengo x Espérance', location: 'Filadélfia' },
+    { id: 1, date: '16/06 (Segunda) - 16:00', teams: 'Chelsea 2 x 0 Los Angeles FC', location: 'Atlanta' },
+    { id: 2, date: '16/06 (Segunda) - 22:00', teams: 'Flamengo 2 x 0 Espérance', location: 'Filadélfia' },
     { id: 3, date: '20/06 (Sexta) - 15:00', teams: 'Flamengo x Chelsea', location: 'Filadélfia' },
     { id: 4, date: '20/06 (Sexta) - 19:00', teams: 'Los Angeles FC x Espérance', location: 'Geodis Park' },
     { id: 5, date: '24/06 (Terça) - 22:00', teams: 'Espérance x Chelsea', location: 'Filadélfia' },
