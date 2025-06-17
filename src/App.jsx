@@ -21,17 +21,17 @@ function App() {
 
   // Classificação dos participantes (iniciando com 0 pontos)
   const participantsClassification = [
-    { id: 1, name: 'Flam', points: 0 },
-    { id: 2, name: 'Gabigol', points: 0 },
-    { id: 3, name: 'Lucas', points: 0 },
-    { id: 4, name: 'Lacioni', points: 0 },
-    { id: 5, name: 'Erick', points: 0 },
-    { id: 6, name: 'Nathan', points: 0 },
-    { id: 7, name: 'Pedro', points: 0 },
-    { id: 8, name: 'Kleber', points: 0 },
-    { id: 9, name: 'Yure', points: 0 },
-    { id: 10, name: 'Floriano', points: 0 },
-    { id: 11, name: 'Brandão', points: 0 }
+    { id: 1, name: 'Flam', points: 10 },
+    { id: 2, name: 'Gabigol', points: 6 },
+    { id: 3, name: 'Lucas', points: 8 },
+    { id: 4, name: 'Lacioni', points: 6 },
+    { id: 5, name: 'Erick', points: 6 },
+    { id: 6, name: 'Nathan', points: 6 },
+    { id: 7, name: 'Pedro', points: 8 },
+    { id: 8, name: 'Kleber', points: 6 },
+    { id: 9, name: 'Yure', points: 8 },
+    { id: 10, name: 'Floriano', points: 8 },
+    { id: 11, name: 'Brandão', points: 8 }
 
   ];
 
