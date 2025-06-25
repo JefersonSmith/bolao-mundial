@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'; 
+import './App.css';
 
 // Importando os componentes
 import Header from './components/Header.jsx';
@@ -7,6 +7,8 @@ import GameTable from './components/GameTable.jsx';
 import Leaderboard from './components/Leaderboard.jsx';
 import BetCard from './components/BetCard.jsx';
 import Footer from './components/Footer.jsx';
+import Celebration from './components/Celebration';
+
 
 function App() {
   // --- DADOS DO BOLÃO ---
@@ -37,21 +39,22 @@ function App() {
 
   // Apostas de cada participante
   const participantsBets = [
-    { participantName: 'Flam', bets: ['Chelsea 2 x 0 Los Angels FC','Flamengo 2 x 0 Espérance', 'Flamengo 0 x 1 Chelsea', 'Los Angeles FC 3 x 1 Espérance', 'Espérance 1 x 4 Chelsea', 'Los Angeles FC 1 x 2 Flamengo'] },
-    { participantName: 'Gabigol', bets: ['Chelsea 5 x 0 Los Angels FC','Flamengo 2 x 1 Espérance', 'Flamengo 1 x 3 Chelsea', 'Los Angeles FC 2 x 0 Espérance', 'Espérance 0 x 4 Chelsea', 'Los Angeles FC 1 x 1 Flamengo'] },
-    { participantName: 'Lucas', bets: ['Chelsea 3 x 1 Los Angels FC','Flamengo 2 x 0 Espérance', 'Flamengo 1 x 1 Chelsea', 'Los Angeles FC 2 x 0 Espérance', 'Espérance 0 x 3 Chelsea', 'Los Angeles FC 0 x 1 Flamengo'] },
-    { participantName: 'Lacioni', bets: ['Chelsea 3 x 0 Los Angels FC','Flamengo 2 x 1 Espérance', 'Flamengo 2 x 1 Chelsea', 'Los Angeles FC 1 x 3 Espérance', 'Espérance 0 x 2 Chelsea', 'Los Angeles FC 0 x 2 Flamengo'] },
-    { participantName: 'Erick', bets: ['Chelsea 3 x 0 Los Angels FC','Flamengo 2 x 1 Espérance', 'Flamengo 0 x 3 Chelsea', 'Los Angeles FC 1 x 1 Espérance', 'Espérance 0 x 4 Chelsea', 'Los Angeles FC 1 x 2 Flamengo'] },
-    { participantName: 'Nathan', bets: ['Chelsea 3 x 1 Los Angels FC','Flamengo 2 x 1 Espérance', 'Flamengo 1 x 2 Chelsea', 'Los Angeles FC 0 x 2 Espérance', 'Espérance 0 x 4 Chelsea', 'Los Angeles FC 1 x 2 Flamengo'] },
-    { participantName: 'Pedro', bets: ['Chelsea 3 x 1 Los Angels FC','Flamengo 2 x 0 Espérance', 'Flamengo 1 x 0 Chelsea', 'Los Angeles FC 2 x 1 Espérance', 'Espérance 0 x 2 Chelsea', 'Los Angeles FC 0 x 2 Flamengo'] },
-    { participantName: 'Kleber', bets: ['Chelsea 4 x 0 Los Angels FC','Flamengo 3 x 1 Espérance', 'Flamengo 2 x 1 Chelsea', 'Los Angeles FC 2 x 2 Espérance', 'Espérance 0 x 3 Chelsea', 'Los Angeles FC 0 x 2 Flamengo'] },
-    { participantName: 'Yure', bets: ['Chelsea 2 x 1 Los Angels FC','Flamengo 2 x 0 Espérance', 'Flamengo 0 x 1 Chelsea', 'Los Angeles FC 1 x 0 Espérance', 'Espérance 0 x 3 Chelsea', 'Los Angeles FC 0 x 2 Flamengo'] },
-    { participantName: 'Floriano', bets: ['Chelsea 4 x 0 Los Angels FC','Flamengo 2 x 0 Espérance', 'Flamengo 1 x 1 Chelsea', 'Los Angeles FC 0 x 0 Espérance', 'Espérance 0 x 5 Chelsea', 'Los Angeles FC 1 x 3 Flamengo'] },
-    { participantName: 'Brandão', bets: ['Chelsea 2 x 0 Los Angels FC','Flamengo 3 x 1 Espérance', 'Flamengo 1 x 1 Chelsea', 'Los Angeles FC 2 x 2 Espérance', 'Espérance 0 x 4 Chelsea', 'Los Angeles FC 1 x 2 Flamengo'] },
+    { participantName: 'Flam', bets: ['Chelsea 2 x 0 Los Angels FC', 'Flamengo 2 x 0 Espérance', 'Flamengo 0 x 1 Chelsea', 'Los Angeles FC 3 x 1 Espérance', 'Espérance 1 x 4 Chelsea', 'Los Angeles FC 1 x 2 Flamengo'] },
+    { participantName: 'Gabigol', bets: ['Chelsea 5 x 0 Los Angels FC', 'Flamengo 2 x 1 Espérance', 'Flamengo 1 x 3 Chelsea', 'Los Angeles FC 2 x 0 Espérance', 'Espérance 0 x 4 Chelsea', 'Los Angeles FC 1 x 1 Flamengo'] },
+    { participantName: 'Lucas', bets: ['Chelsea 3 x 1 Los Angels FC', 'Flamengo 2 x 0 Espérance', 'Flamengo 1 x 1 Chelsea', 'Los Angeles FC 2 x 0 Espérance', 'Espérance 0 x 3 Chelsea', 'Los Angeles FC 0 x 1 Flamengo'] },
+    { participantName: 'Lacioni', bets: ['Chelsea 3 x 0 Los Angels FC', 'Flamengo 2 x 1 Espérance', 'Flamengo 2 x 1 Chelsea', 'Los Angeles FC 1 x 3 Espérance', 'Espérance 0 x 2 Chelsea', 'Los Angeles FC 0 x 2 Flamengo'] },
+    { participantName: 'Erick', bets: ['Chelsea 3 x 0 Los Angels FC', 'Flamengo 2 x 1 Espérance', 'Flamengo 0 x 3 Chelsea', 'Los Angeles FC 1 x 1 Espérance', 'Espérance 0 x 4 Chelsea', 'Los Angeles FC 1 x 2 Flamengo'] },
+    { participantName: 'Nathan', bets: ['Chelsea 3 x 1 Los Angels FC', 'Flamengo 2 x 1 Espérance', 'Flamengo 1 x 2 Chelsea', 'Los Angeles FC 0 x 2 Espérance', 'Espérance 0 x 4 Chelsea', 'Los Angeles FC 1 x 2 Flamengo'] },
+    { participantName: 'Pedro', bets: ['Chelsea 3 x 1 Los Angels FC', 'Flamengo 2 x 0 Espérance', 'Flamengo 1 x 0 Chelsea', 'Los Angeles FC 2 x 1 Espérance', 'Espérance 0 x 2 Chelsea', 'Los Angeles FC 0 x 2 Flamengo'] },
+    { participantName: 'Kleber', bets: ['Chelsea 4 x 0 Los Angels FC', 'Flamengo 3 x 1 Espérance', 'Flamengo 2 x 1 Chelsea', 'Los Angeles FC 2 x 2 Espérance', 'Espérance 0 x 3 Chelsea', 'Los Angeles FC 0 x 2 Flamengo'] },
+    { participantName: 'Yure', bets: ['Chelsea 2 x 1 Los Angels FC', 'Flamengo 2 x 0 Espérance', 'Flamengo 0 x 1 Chelsea', 'Los Angeles FC 1 x 0 Espérance', 'Espérance 0 x 3 Chelsea', 'Los Angeles FC 0 x 2 Flamengo'] },
+    { participantName: 'Floriano', bets: ['Chelsea 4 x 0 Los Angels FC', 'Flamengo 2 x 0 Espérance', 'Flamengo 1 x 1 Chelsea', 'Los Angeles FC 0 x 0 Espérance', 'Espérance 0 x 5 Chelsea', 'Los Angeles FC 1 x 3 Flamengo'] },
+    { participantName: 'Brandão', bets: ['Chelsea 2 x 0 Los Angels FC', 'Flamengo 3 x 1 Espérance', 'Flamengo 1 x 1 Chelsea', 'Los Angeles FC 2 x 2 Espérance', 'Espérance 0 x 4 Chelsea', 'Los Angeles FC 1 x 2 Flamengo'] },
   ];
 
   return (
     <div className="app-container">
+      <Celebration />
       <Header title="Bolão Mundial de Clubes FIFA" subtitle="Grupo do Flamengo - Imaturos!" />
 
       <div className="main-content-wrapper">
