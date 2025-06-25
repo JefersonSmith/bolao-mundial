@@ -15,23 +15,23 @@ function App() {
     { id: 2, date: '16/06 (Segunda) - 22:00', teams: 'Flamengo 2 x 0 Espérance', location: 'Filadélfia' },
     { id: 3, date: '20/06 (Sexta) - 15:00', teams: 'Flamengo 3 x 1 Chelsea', location: 'Filadélfia' },
     { id: 4, date: '20/06 (Sexta) - 19:00', teams: 'Los Angeles FC 0 x 1 Espérance', location: 'Geodis Park' },
-    { id: 5, date: '24/06 (Terça) - 22:00', teams: 'Espérance x Chelsea', location: 'Filadélfia' },
-    { id: 6, date: '24/06 (Terça) - 22:00', teams: 'Los Angeles FC x Flamengo', location: 'Camping World Stadium' },
+    { id: 5, date: '24/06 (Terça) - 22:00', teams: 'Espérance 0 x 3 Chelsea', location: 'Filadélfia' },
+    { id: 6, date: '24/06 (Terça) - 22:00', teams: 'Los Angeles FC 1 x 1 Flamengo', location: 'Camping World Stadium' },
   ];
 
   // Classificação dos participantes (iniciando com 0 pontos)
   const participantsClassification = [
-    { id: 1, name: 'Flam', points: 10 },
-    { id: 2, name: 'Gabigol', points: 6 },
-    { id: 3, name: 'Lucas', points: 8 },
-    { id: 4, name: 'Lacioni', points: 12 },
-    { id: 5, name: 'Erick', points: 6 },
-    { id: 6, name: 'Nathan', points: 9 },
-    { id: 7, name: 'Pedro', points: 11 },
-    { id: 8, name: 'Kleber', points: 9 },
-    { id: 9, name: 'Yure', points: 8 },
-    { id: 10, name: 'Floriano', points: 8 },
-    { id: 11, name: 'Brandão', points: 8 }
+    { id: 1, name: 'Flam', points: 13 },
+    { id: 2, name: 'Gabigol', points: 14 },
+    { id: 3, name: 'Lucas', points: 13 },
+    { id: 4, name: 'Lacioni', points: 15 },
+    { id: 5, name: 'Erick', points: 9 },
+    { id: 6, name: 'Nathan', points: 12 },
+    { id: 7, name: 'Pedro', points: 14 },
+    { id: 8, name: 'Kleber', points: 14 },
+    { id: 9, name: 'Yure', points: 13 },
+    { id: 10, name: 'Floriano', points: 11 },
+    { id: 11, name: 'Brandão', points: 11 }
 
   ];
 
